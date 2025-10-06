@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 
 <html>
+=======
+<!DOCTYPE html>
+<html lang="fr">
+>>>>>>> f14_block_index
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page ISEN Ouest</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <style>
+<<<<<<< HEAD
 <<<<<<< HEAD
 html {
     font-family: Open Sans,sans-serif;
@@ -14,23 +21,153 @@ html {
   background: #fff;
   border-bottom: 1px solid #e5e5e5;
 }
+=======
+        html {
+            font-family: Open Sans, Arial, sans-serif;
+        }
+        /* ---------- HEADER ---------- */
+        .header-isen {
+            background: `#fff`;
+            border-bottom: 1px solid `#e5e5e5`;
+        }
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-logo img {
+            height: 45px;
+            width: auto;
+        }
+        .header-nav {
+            background: `#e30613`;
+            flex: 1;
+            margin-left: 40px;
+        }
+        .header-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+        .header-nav li {
+            flex: 1;
+            text-align: center;
+        }
+        .header-nav a {
+            display: block;
+            padding: 14px 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: `#fff`;
+            transition: background 0.2s;
+            text-decoration: none;
+        }
+        .header-nav a:hover {
+            text-decoration: underline;
+        }
 
-/* Organisation interne */
-.header-container {
-  max-width: 1400px; /* un peu plus large pour aérer */
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+        /* ---------- IMAGES SECTION ---------- */
+        .dp-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .dp-section h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: `#000`;
+        }
+        .dp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .dp-card {
+            border: 1px solid `#ddd`;
+            border-radius: 8px;
+            overflow: hidden;
+            background: `#fff`;
+            transition: transform 0.2s ease;
+            padding: 3px 3px 0;
+            position: relative;
+        }
+        .dp-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+        .dp-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-/* Logo */
-.header-logo img {
-  height: 45px; /* logo moins haut */
-  width: auto;
-}
+        /* ---------- BLOCK ALTERNANCE ---------- */
+        .block-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .block-columns {
+            display: flex;
+            gap: 40px;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+        .block-alternance {
+            margin: 20px 0;
+            border: 2px solid `#c8102e`;
+            border-radius: 8px;
+            overflow: hidden;
+            background: `#fff`;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+            min-width: 220px;
+            display: flex;
+            flex-direction: column;
+        }
+        .block-alternance img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .block-alternance-content {
+            padding: 24px 30px;
+        }
+        .block-alternance-content h2 {
+            font-size: 200%;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        .block-alternance-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: `#333`;
+            margin-bottom: 16px;
+        }
+        .block-button {
+            margin: auto;
+            text-align: center;
+        }
+        .block-button a {
+            background-color: `#e30613`;
+            color: `#fff`;
+            display: inline-block;
+            padding: .5rem 2rem;
+            border-radius: 3.45rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .block-button a:hover {
+            text-decoration: underline;
+        }
 
+<<<<<<< HEAD
 /* Navigation */
 .header-nav {
   background: #e30613; /* Rouge ISEN */
@@ -163,6 +300,7 @@ html {
             left: 0;
         }
         /* ---------- FOOTER FINAL ---------- */
+
         .site-footer {
             background: `#000`;
             color: `#fff`;
@@ -206,6 +344,7 @@ html {
             font-family: Arial, sans-serif;
             font-size: 14px;
         }
+
         /* IMAGES */
 .dp-section {
   max-width: 1200px;
@@ -255,7 +394,7 @@ position: absolute;
   bottom: 1em;
   left: 0;
   margin: 0;
->>>>>>> f13_images_index
+
 }
     </style>
 </head>
@@ -282,11 +421,108 @@ position: absolute;
     <footer class="site-footer">
         <div class="footer-container">
             <!-- Colonne 1 : Logo -->
+
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header-isen">
+        <div class="header-container">
+            <a href="/" class="header-logo">
+                <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+            </a>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Formations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECTION IMAGES -->
+    <section class="dp-section">
+        <h2>Nos domaines professionnels</h2>
+        <div class="dp-grid">
+            <div class="dp-card">
+                <a href="#">
+                    <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="légende 1">
+                </a>
+            </div>
+            <div class="dp-card">
+                <a href="#">
+                    <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="légende 2">
+                </a>
+            </div>
+            <div class="dp-card">
+                <a href="#">
+                    <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="légende 3">
+                </a>
+            </div>
+            <div class="dp-card">
+                <a href="#">
+                    <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="légende 4">
+                </a>
+            </div>
+            <div class="dp-card">
+                <a href="#">
+                    <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="légende 5">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOCKS (ALTERNANCE) -->
+    <div class="block-container">
+        <div class="block-columns">
+            <section class="block-alternance">
+                <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Alternance ISEN Ouest">
+                <div class="block-alternance-content">
+                    <h2>Titre bloc 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Maecenas eget sapien consequat, mattis dolor non, laoreet erat.</p>
+                    <div class="block-button">
+                        <a href="#">Lien</a>
+                    </div>
+                </div>
+            </section>
+            <section class="block-alternance">
+                <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Alternance ISEN Ouest">
+                <div class="block-alternance-content">
+                    <h2>Titre bloc 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Maecenas eget sapien consequat, mattis dolor non, laoreet erat.</p>
+                    <div class="block-button">
+                        <a href="#">Lien</a>
+                    </div>
+                </div>
+            </section>
+            <section class="block-alternance">
+                <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Alternance ISEN Ouest">
+                <div class="block-alternance-content">
+                    <h2>Titre bloc 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Maecenas eget sapien consequat, mattis dolor non, laoreet erat.</p>
+                    <div class="block-button">
+                        <a href="#">Lien</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
             <div class="footer-col footer-col-logo">
                 <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg"
                     alt="ISEN Ouest" class="footer-logo">
             </div>
+
             <!-- Zone titres -->
+
             <div class="footer-links-section">
                 <p class="footer-cities">Texte à venir</p>
             </div>
@@ -295,6 +531,7 @@ position: absolute;
     <div class="footer-bottom">
         &copy; 2024 ISEN Ouest. Tous droits réservés.
     </div>
+
     <section class="dp-section">
       <h2>Titre</h2>
       <div class="dp-grid">
