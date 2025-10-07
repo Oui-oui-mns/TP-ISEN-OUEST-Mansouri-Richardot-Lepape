@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — ISEN Ouest</title>
+</head>
+
+<body>
+
+<!-- HEADER_SIMPLE  -->
+
+
+<!-- CONTACT -->
+
+<div class="contact-card" aria-labelledby="contact-title">
+  <h1 id="contact-title">Contactez-nous</h1>
+
+  <p class="lead">
+    Remplissez le formulaire ci-dessous pour nous envoyer votre demande.
+  </p>
+
+  <div class="notice">
+    « * » indique les champs nécessaires
+  </div>
+
+  <form class="contact-form" action="#" method="post" novalidate>
+    <div class="form-row w-100">
+      <label class="field-label" for="profile">Vous êtes ? *</label>
+      <select id="profile" name="profile" required>
+        <option value="">Sélectionnez votre profil</option>
+        <option>Particulier</option>
+        <option>Professionnel</option>
+        <option>Chercheur</option>
+        <option>Étudiant étranger</option>
+        <option>Journaliste</option>
+        <option>Prestataire</option>
+        <option>Autre</option>
+      </select>
+    </div>
+
+    <div class="form-row w-100">
+      <label class="field-label" for="firstname">Prénom *</label>
+      <input id="firstname" name="firstname" type="text" required>
+    </div>
+
+    <div class="form-row w-100">
+      <label class="field-label" for="lastname">Nom *</label>
+      <input id="lastname" name="lastname" type="text" required>
+    </div>
+
+    <div class="form-row w-100">
+      <label class="field-label" for="email">Email *</label>
+      <input id="email" name="email" type="email" placeholder="votre@mail.com" required>
+    </div>
+
+    <div class="form-row w-100">
+      <label class="field-label" for="phone">Téléphone *</label>
+      <input id="phone" name="phone" type="tel" placeholder="+33 6 12 34 56 78" required>
+    </div>
+
+    <div class="form-row w-100">
+      <label class="field-label" for="message">Message *</label>
+      <textarea id="message" name="message" required placeholder="Votre message..."></textarea>
+    </div>
+
+    <div class="form-row w-100">
+      <label class="inline-group">
+        <input id="consent" name="consent" type="checkbox" required>  
+        J’accepte la <a class="helper-link" href="https://isen-ouest.fr/politique-de-confidentialite/" target="_blank">politique de confidentialité</a>.
+      </label>
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="btn-primary">Envoyer</button>
+    </div>
+  </form>
+</div>
+
+<style>
+.contact-card {
+  max-width:720px;
+  margin:2em auto;
+  border-radius:10px;
+  background:#fff;
+  box-shadow:0 6px 24px rgba(12,12,12,0.2);
+  padding:28px;
+  border:1px solid #e6e6e6;
+}
+.contact-card h1 {
+  font-size:28px;
+  font-weight:700;
+  color:#000;
+  margin-bottom:10px;
+}
+.contact-card .lead {
+  color:#6b6b6b;
+  font-size:15px;
+  margin-bottom:18px;
+}
+.notice {
+  background:#fff8f9;
+  border-left:4px solid #c8102e;
+  color:#333;
+  padding:10px 12px;
+  border-radius:4px;
+  margin-bottom:18px;
+  font-size:14px;
+}
+.field-label {
+  display:block;
+  font-size:14px;
+  margin-bottom:6px;
+  color:#222;
+}
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+  width:100%;
+  padding:10px 12px;
+  border:1px solid #d7d7d7;
+  border-radius:6px;
+  font-size:14px;
+  background:#fff;
+  color:#111;
+  box-sizing:border-box;
+}
+textarea { min-height:120px; resize:vertical; }
+.btn-primary {
+  background:#c8102e;
+  color:#fff;
+  padding:10px 18px;
+  border-radius:6px;
+  border:0;
+  font-weight:700;
+  font-size:15px;
+  cursor:pointer;
+}
+.btn-primary:hover { background:#a00b23; }
+.helper-link { color:#6b6b6b; text-decoration:none; }
+.helper-link:hover { text-decoration:underline; color:#000; }
+</style>
+
+
+<!-- FOOTER_SIMPLE -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-col footer-col-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
+           alt="ISEN Ouest" class="footer-logo">
+    </div>
+    <div class="footer-links-section">
+      <p class="footer-cities">Texte à venir</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 ISEN Ouest
+  </div>
+</footer>
+
+<style>
+.site-footer {
+  background:#000; color:#fff; padding:40px 20px 20px; font-family:Arial, sans-serif;
+}
+.footer-container {
+  display:flex; max-width:1200px; margin:0 auto; gap:40px; flex-wrap:wrap;
+}
+.footer-col-logo { flex:1; min-width:220px; display:flex; flex-direction:column; }
+.footer-logo { height:100px; margin:30px 0 15px; }
+.footer-links-section { flex:3; display:flex; flex-direction:column; }
+.footer-cities { font-size:40px; font-weight:700; text-align:left; margin:0 0 20px; }
+.footer-bottom { text-align:center; padding-top:15px; background:#fff; color:#000; font-size:14px; }
+</style>
+
+
+
+</body>
+</html>
