@@ -343,6 +343,11 @@ html {
             font-size: 14px;
         }
 
+
+
+
+      
+
         /* IMAGES */
 .dp-section {
   max-width: 1200px;
@@ -475,7 +480,8 @@ position: absolute;
                     <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et les périodes au sein de l’entreprise d’accueil en montant progressivement en compétence. Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.</p>
 
                     <div class="block-button">
-                        <a href="#">Lien</a>
+                      <a href="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" target="_blank">
+                        Formation d'ingénieurs sous statut apprenti</a>
                     </div>
                 </div>
             </section>
@@ -486,7 +492,7 @@ position: absolute;
                     <p>Chaque étudiant construit son propre parcours de formation sur 5 ans.</p>
                     <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
                     <div class="block-button">
-                        <a href="#">https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg</a>
+                      <a href="#" id="show-postbac">Découvrez nos 7 cycles post-bac</a>
                     </div>
                 </div>
             </section>
@@ -504,46 +510,59 @@ position: absolute;
 
             <!-- Zone titres -->
 
-            <div class="footer-links-section">
-                <p class="footer-cities">Texte à venir</p>
-            </div>
-        </div>
-    </footer>
-    <div class="footer-bottom">
-        &copy; 2024 ISEN Ouest. Tous droits réservés.
-    </div>
+            
 
     <section class="dp-section">
-      <h2>Titre</h2>
+      
       <div class="dp-grid">
         <div class="dp-card">
           <a href="#">
             <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="légende">
           </a>
         </div>
-        <div class="dp-card">
-          <a href="#">
-            <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="légende">
-          </a>
-        </div>
-        <div class="dp-card">
-          <a href="#">
-            <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="légende">
-          </a>
-        </div>
-        <div class="dp-card">
-          <a href="#">
-            <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="légende">
-          </a>
-        </div>
-        <div class="dp-card">
-          <a href="#">
-            <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="légende">
-          </a>
-        </div>
+       
+        <div class="footer-links-section">
+          <p class="footer-cities">Texte à venir</p>
       </div>
-    </section>
+  </div>
+</footer>
+<div class="footer-bottom">
+  &copy; 2024 ISEN Ouest. Tous droits réservés.
+</div>
+        
+   
 
+
+
+<div id="postbac-popup" style="display:none;">
+  <div class="footer-black-box">
+    <div class="footer-content">
+      <h2 style="text-align:center;">Formations post-bac</h2>
+      <p>Chaque étudiant construit son propre parcours de formation sur 5 ans</p>
+      <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+      <p>Au cours de ces 3 années, les élèves acquièrent une solide formation dans les sciences et les technologies numériques tout en approfondissant une spécialité dès la première année après le baccalauréat. Plusieurs passerelles sont possibles durant les 3 premières années si l’étudiant souhaite changer de cycle.</p>
+      <p>Après la deuxième année, il est possible de choisir une poursuite d’études sous statut étudiant ou d’opter pour un contrat d’apprentissage.</p>
+      <p>Au niveau Master 1, qu’il soit sous statut étudiant ou apprenti, chaque élève accède à un large choix de domaines professionnels sans concours ni critère de classement.</p>
+      <div style="text-align:center;margin:24px 0;">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/09/11/schema-des-etudes-isen-ouest-32.png" 
+        alt="Schéma des études ISEN Ouest" style="max-width:100%; border-radius:9px;">
+      </div>
+      <div style="text-align:center;">
+        <button onclick="document.getElementById('postbac-popup').style.display='none'" style="background:red;color:white;font-weight:bold;padding:8px 26px;border-radius:24px;border:none;cursor:pointer;">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  document.getElementById('show-postbac').addEventListener('click', function(e){
+    e.preventDefault();
+    document.getElementById('postbac-popup').style.display = 'block';
+    window.scrollTo({top: document.getElementById('postbac-popup').offsetTop, behavior: 'smooth'});
+  });
+  </script>
+   
 </body>
 </html>
 
