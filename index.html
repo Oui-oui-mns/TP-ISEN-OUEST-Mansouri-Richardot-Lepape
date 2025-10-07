@@ -480,8 +480,7 @@ position: absolute;
                     <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et les périodes au sein de l’entreprise d’accueil en montant progressivement en compétence. Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.</p>
 
                     <div class="block-button">
-                      <a href="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" target="_blank">
-                        Formation d'ingénieurs sous statut apprenti</a>
+                      <a href="#" id="show-engineer">Formation d'ingénieurs sous statut apprenti</a>
                     </div>
                 </div>
             </section>
@@ -563,6 +562,32 @@ position: absolute;
   });
   </script>
    
+
+
+  <div id="engineer-popup" style="display:none; max-width:700px; margin:40px auto;">
+    <h2 style="text-align:center;">Devenir ingénieur</h2>
+    <p>Parce que les technologies et l’IA sont partout, l’ISEN Ouest forme des ingénieurs aptes à répondre aux besoins des entreprises dans tous les secteurs d’activités.</p>
+    <p>Après le baccalauréat, vous optez pour un cycle de formation en 3 ans centré sur les sciences appliquées, le numérique et l’IA. En fonction de votre profil, sept cursus différents sont proposés. Pendant ces trois premières années, vous réfléchissez à votre projet professionnel et vous pouvez changer de cursus.</p>
+    <p>Ensuite, vous accédez sans critère de classement aux domaines professionnels proposés par l’ISEN Ouest. C’est le temps de la spécialisation.</p>
+    <p>La formation d’ingénieur généraliste ne se limite pas aux matières techniques ou scientifiques. Les élèves-ingénieurs apprennent à communiquer, à manager, à prendre de la hauteur sur leurs activités et surtout, comme personne ne connait les technologies de demain, ils apprennent à apprendre.</p>
+    <div style="text-align:center;margin:24px 0;">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/08/21/science-et-numerique.jpg" alt="Science et numérique à l'ISEN Ouest" style="max-width:100%; border-radius:9px;">
+    </div>
+    <div style="text-align:center;">
+      <button onclick="document.getElementById('engineer-popup').style.display='none'"
+        style="background:red;color:white;font-weight:bold;padding:8px 26px;border-radius:24px;border:none;cursor:pointer;">Fermer</button>
+    </div>
+  </div>
+
+  
+  <script>
+    document.getElementById('show-engineer').addEventListener('click', function(e){
+      e.preventDefault();
+      document.getElementById('engineer-popup').style.display = 'block';
+      window.scrollTo({top: document.getElementById('engineer-popup').offsetTop, behavior: 'smooth'});
+    });
+  </script>
+  
 </body>
 </html>
 
