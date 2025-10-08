@@ -6,29 +6,54 @@
     <title>ISEN Ouest — Formations post-bac</title>
     <!-- V1 : styles inline par page -->
     <style>
-        body{font-family:system-ui,Arial,sans-serif;max-width:1100px;margin:0 auto;padding:16px}
-        nav a{margin-right:12px}
-        header,footer{padding:12px 0;border-bottom:1px solid #ddd}
-        footer{border-top:1px solid #ddd;border-bottom:none;margin-top:24px}
-        .block{border:1px solid #eee;padding:12px;border-radius:8px;margin:12px 0}
-        .img{display:block;max-width:100%;height:auto;border-radius:8px}
-        .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-        .hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
-        @media (max-width: 800px){.hero{grid-template-columns:1fr}}
+        :root { --max: 1100px; }
+        * { box-sizing: border-box; }
+        body{font-family:system-ui,Arial,sans-serif; margin:0; color:#111}
+
+        /* ===== MASTHEAD (logo à gauche + barre rouge à droite) ===== */
+        .masthead{ display:flex; align-items:center; border-bottom:1px solid #eee; }
+        .logo-block{ padding:10px 16px; display:flex; align-items:center; }
+        .logo-img{ height:48px; width:auto; display:block; }
+        .topbar{ flex:1; background:#d90c10; border-left:1px solid #eee; }
+        .topbar a{ display:block; text-align:center; padding:14px 0;
+            color:#fff; text-decoration:underline; font-weight:700;
+            text-underline-offset:4px; }
+
+        /* ===== CONTENU ===== */
+        main{ max-width:var(--max); margin:0 auto; padding:16px; }
+        h1{ margin:12px 0 16px; font-size:32px; }
+        .block{ border:1px solid #eee; padding:12px; border-radius:8px; margin:12px 0; }
+        .img{ display:block; max-width:100%; height:auto; border-radius:8px; }
+        .grid{ display:grid; gap:12px; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); }
+        .hero{ display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:center; }
+        @media (max-width:800px){ .hero{ grid-template-columns:1fr; } }
+
+        /* ===== BANDEAU NOIR ===== */
+        .hero-dark{ margin:36px 0 18px; background:#000; color:#fff; }
+        .hero-dark .inner{
+            max-width:var(--max); margin:0 auto; padding:48px 16px;
+            display:flex; align-items:center; justify-content:center; gap:32px;
+        }
+        .logo-white{ height:60px; width:auto; display:block; }
+        .text-venir{ font-size:32px; font-weight:700; }
+
+        /* ===== COPYRIGHT ===== */
+        .copy{ text-align:center; color:#555; margin:18px 0; }
     </style>
 </head>
 <body>
-<header>
-    <strong>ISEN Ouest</strong>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="postbac.html">Post-bac</a>
-        <a href="apprentissage.html">Apprentissage</a>
-        <a href="devenir_inge.html">Devenir ingénieur</a>
-        <a href="formations.html">Formations</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+<!-- MASTHEAD : logo image à gauche + barre rouge à droite -->
+<div class="masthead">
+    <div class="logo-block">
+        <img class="logo-img"
+             src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png"
+             alt="ISEN Ouest (logo)">
+    </div>
+    <div class="topbar">
+        <a href="#">Liens à venir</a>
+    </div>
+</div>
+
 
 <main>
     <h1>Formations post-bac</h1>
@@ -47,8 +72,16 @@
     </section>
 </main>
 
-<footer>
-    <small>© ISEN Ouest – Démo TP</small>
-</footer>
+<section class="hero-dark">
+    <div class="inner">
+        <img class="logo-white"
+             src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg"
+             alt="ISEN Ouest (logo blanc)">
+        <div class="text-venir">Texte à venir</div>
+    </div>
+</section>
+
+<div class="copy">©</div>
+
 </body>
 </html>
